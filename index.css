@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+body{
+    background-color: black;
+    perspective: 1000px;
+}
+.wrapper{
+    
+    height: 180px;
+    width: 120px;
+    margin: 200px auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(-15deg) rotateY(0deg);
+    user-select: none;
+}
+.wrapper img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 180px;
+    width: 120px;
+    user-select: none;
+    transition: transform 0.5s;
+    -webkit-box-reflect: below 5px -webkit-linear-gradient(top, rgba(0 ,0,0,0), rgba(0,0,0,0.5) 90%);
+}
